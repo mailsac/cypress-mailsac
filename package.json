@@ -1,0 +1,82 @@
+{
+  "name": "@mailsac/cypress",
+  "version": "0.1.0",
+  "description": "Reliable Mailsac email testing for Cypress: wait for matching messages, verify links and extract one-time codes.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "node": ["dist/node.d.ts"],
+      "commands": ["dist/commands.d.ts"]
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.js"
+    },
+    "./commands": {
+      "types": "./dist/commands.d.ts",
+      "default": "./dist/commands.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./dist/commands.js"
+  ],
+  "engines": {
+    "node": "^22.0.0 || ^24.0.0 || >=26.0.0"
+  },
+  "peerDependencies": {
+    "cypress": "^16.0.0"
+  },
+  "dependencies": {
+    "@mailsac/api": "1.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "cypress": "16.1.0",
+    "nodemailer": "^10.0.10",
+    "typescript": "^5.9.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.cjs",
+    "test:e2e": "npm run build && node scripts/test-e2e.cjs",
+    "example": "node examples/password-reset/server.cjs",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "cypress",
+    "cypress-plugin",
+    "mailsac",
+    "email",
+    "email-testing",
+    "otp",
+    "password-reset",
+    "testing"
+  ],
+  "homepage": "https://github.com/mailsac/cypress-mailsac#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mailsac/cypress-mailsac.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mailsac/cypress-mailsac/issues"
+  },
+  "author": "Habitat AI Incorporated",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

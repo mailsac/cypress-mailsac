@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tgz
+.env
+.env.*
+!.env.example
+!examples/password-reset/.env.smtp.example
+.npmrc
+cypress/screenshots/
+cypress/videos/
+coverage/
+.DS_Store
