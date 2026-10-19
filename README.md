@@ -2,7 +2,7 @@
 
 Wait for the right email, follow a password-reset link, or extract a one-time code in Cypress. The API key stays in Cypress's Node process. Tests receive the matching message, its text, and its links.
 
-[Create a Mailsac account](https://mailsac.com/register?utm_source=cypress&utm_medium=integration&utm_campaign=cypress_plugin&utm_content=readme) · [Mailsac API documentation](https://docs.mailsac.com/?utm_source=cypress&utm_medium=integration&utm_campaign=cypress_plugin&utm_content=docs) · [Runnable password-reset example](./examples/password-reset)
+[Create a Mailsac account](https://mailsac.com/register?utm_source=cypress&utm_medium=integration&utm_campaign=cypress_plugin&utm_content=readme) · [Mailsac API documentation](https://docs.mailsac.com/?utm_source=cypress&utm_medium=integration&utm_campaign=cypress_plugin&utm_content=docs) · [Runnable password-reset example](./examples/password-reset) · [Cypress email testing guide](https://mailsac.com/pages/cypress-email-testing/) · [OTP and magic-link testing](https://mailsac.com/pages/test-otp-and-magic-link-emails/)
 
 ## Install
 
